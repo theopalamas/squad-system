@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "squad-system"
+version = "1.0.0"
+description = "Squad answering system"
+authors = ["Theodoros Palamas"]
+readme = "README.md"
+packages = [{include = "squad_system"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "^2.4.1"
+numpy = "^2.1.1"
+pydantic = "^2.9.2"
+pyyaml = "^6.0.2"
+transformers = "^4.44.2"
+tqdm = "^4.66.5"
+click = "^8.1.7"
+scikit-learn = "^1.5.2"
+matplotlib = "^3.9.2"
+fastapi = "^0.115.0"
+uvicorn = "^0.30.6"
+gunicorn = "^23.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

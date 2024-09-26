@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  qa:
+    image: squad_system:latest
+    command: sh -c 'gunicorn -c gunicorn_config.py squad_system.api.__main__:app --preload'
+    env_file:
+      - .env
+    ports:
+      - "0.0.0.0:8000:8000"
+ 
